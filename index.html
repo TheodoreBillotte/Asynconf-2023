@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" href="src/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asynconf 2023</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+    <h1>Green Bank</h1>
+    <h2>Hackaton Asynconf 2023</h2>
+    <form id="app" class="glass">
+        <label for="title">Calcul du Taux d'emprunt pour l'achat d'un véhicule</label>
+        <input type="number" id="loan" name="loan" step="1000" placeholder="Montant du prêt">
+        <select id="vehicle-type" name="vehicle-type">
+            <option value="city">Citadine</option>
+            <option value="convertible">Cabriolet</option>
+            <option value="sedan">Berline</option>
+            <option value="suv">SUV / 4x4</option>
+        </select>
+        <select id="energy-type" name="energy-type">
+            <option value="gasoline">Essence</option>
+            <option value="electric">Electrique</option>
+            <option value="gas">Gaz</option>
+            <option value="diesel">Diesel</option>
+            <option value="hybrid">Hybride</option>
+        </select>
+        <input type="number" id="km" name="km" step="5000" min="5000" max="30000" value="10000">
+        <input type="number" id="year" name="year" value="2000" min="1960" max="2023" step="5">
+        <input type="number" id="people" name="people" min="1" value="1">
+    </form>
+    <div id="results" class="solid">
+        <div id="score" class="glass">
+            <p>La note de votre véhicule est <span id="grade"></span></p>
+            <p>Le taux d'emprunt est de <span id="rate"></span>%</p>
+        </div>
+
+        <div id="hints" class="glass">
+            <p>Ce que vous pourriez faire pour améliorer celà:</p>
+            <ul id="hints-list">
+                <li>Choisir un véhicule moins lourd</li>
+                <li>Choisir une énergie moins polluante (electricité par exemple)</li>
+                <li>Choisir un véhicule plus récent</li>
+            </ul>
+            <p>L'argent que vous pourriez économiser avec ces changements: <span id="save"></span>€</p>
+        </div>
+    </div>
+  </body>
+</html>

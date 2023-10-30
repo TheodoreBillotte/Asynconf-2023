@@ -1,0 +1,109 @@
+/* Réinitialisation de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* Effet animé sur le titre lors du survol */
+h1:hover {
+    color: #4CAF50;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Style du glass morphisme */
+.glass {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80%; /* Augmentation de la largeur */
+    max-width: 800px; /* Largeur maximale pour les grands écrans */
+    margin-bottom: 20px;
+}
+
+/* Style des titres */
+h1, h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Effet de titre sur le label du formulaire */
+label {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Style du formulaire et des résultats */
+form, #results {
+    display: flex;
+    flex-direction: column;
+}
+
+label, input, select {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+input, select {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Mise en évidence de la div avec l'ID 'score' */
+#score {
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.4em;
+    margin-bottom: 20px;
+}
+
+/* Effet visuel sur la liste des améliorations */
+#hints {
+    padding: 15px;
+    border-radius: 10px;
+}
+
+#hints p:first-child {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#hints-list li {
+    background-color: rgba(0, 128, 0, 0.1);
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#hints-list li:hover {
+    background-color: rgba(0, 128, 0, 0.2);
+}
+
+#hints-list {
+    list-style-type: none;
+}
+
+/* Accent sur les économies potentielles */
+#save {
+    font-size: 1.5em;
+    color: #4CAF50;
+}
