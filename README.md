@@ -16,6 +16,9 @@ and I don't have a lot of time to work on it.
 
 This is just a web page, so you have to download the project and open the index.html file on your favorite navigator.
 
+#### **IMPORTANT**
+If you have a CORS problem, you can open an IDE like VS Code or something and start a preview inside, that's because you need a web server to load the JS script.
+
 ### Project ideas
 
 This project is a loan calculator for the Green Bank.
