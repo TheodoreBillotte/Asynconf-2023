@@ -35,3 +35,5 @@ Additionally, it suggests improvement ideas to potentially save money in terms o
 
 - Faire en sorte que les idées d'amélioration soient plus pertinentes en fonction du véhicule
   - Par exemple, si le seul problème du véhicule est son type d'énergie, uniquement proposer des véhicules avec un meilleur type d'énergie
+
+- Rendre les scores pour les différents critères configurables avec des fichiers JSON
