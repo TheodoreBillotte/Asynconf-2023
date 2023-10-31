@@ -3,34 +3,33 @@
   <head>
     <meta charset="UTF-8">
     <link rel="icon" href="/favicon.ico">
-    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Asynconf 2023</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+    <script type="module" src="/assets/js/script.js"></script>
     <h1>Green Bank</h1>
     <h2>Hackaton Asynconf 2023</h2>
     <form id="app" class="glass">
-        <label for="title">Calcul du Taux d'emprunt pour l'achat d'un véhicule</label>
-        <input type="number" id="loan" name="loan" step="1000" placeholder="Montant du prêt">
-        <select id="vehicle-type" name="vehicle-type">
+        <h3>Calcul du Taux d'emprunt pour l'achat d'un véhicule</h3>
+        <label for="loan">Le montant de votre prêt</label><input type="number" id="loan" name="loan" step="1000" placeholder="Montant du prêt">
+        <label for="vehicle-type">Le type de votre véhicule</label><select id="vehicle-type" name="vehicle-type">
             <option value="city">Citadine</option>
             <option value="convertible">Cabriolet</option>
             <option value="sedan">Berline</option>
             <option value="suv">SUV / 4x4</option>
         </select>
-        <select id="energy-type" name="energy-type">
+        <label for="energy-type">Le type d'énergie utilisé par votre véhicule</label><select id="energy-type" name="energy-type">
             <option value="gasoline">Essence</option>
             <option value="electric">Electrique</option>
             <option value="gas">Gaz</option>
             <option value="diesel">Diesel</option>
             <option value="hybrid">Hybride</option>
         </select>
-        <input type="number" id="km" name="km" step="5000" min="5000" max="30000" value="10000">
-        <input type="number" id="year" name="year" value="2000" min="1960" max="2023" step="5">
-        <input type="number" id="people" name="people" min="1" value="1">
+        <label for="km">Le nombre de KM parcouru par an</label><input type="number" id="km" name="km" step="5000" min="5000" max="30000" value="10000">
+        <label for="year">L'année de fabrication du véhicule</label><input type="number" id="year" name="year" value="2000" min="1960" max="2023" step="5">
+        <label for="people">Le nombre de personnes suceptible d'utiliser ce véhicule</label><input type="number" id="people" name="people" min="1" value="1">
     </form>
     <div id="results" class="solid">
         <div id="score" class="glass">
@@ -39,13 +38,13 @@
         </div>
 
         <div id="hints" class="glass">
-            <p>Ce que vous pourriez faire pour améliorer celà:</p>
+            <h3>Idées d'amélioration:</h3>
             <ul id="hints-list">
                 <li>Choisir un véhicule moins lourd</li>
-                <li>Choisir une énergie moins polluante (electricité par exemple)</li>
+                <li>Choisir une énergie moins polluante</li>
                 <li>Choisir un véhicule plus récent</li>
             </ul>
-            <p>L'argent que vous pourriez économiser avec ces changements: <span id="save"></span>€</p>
+            <h4>L'argent que vous pourriez économiser avec ces changements: <span id="save"></span>€</h4>
         </div>
     </div>
   </body>

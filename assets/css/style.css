@@ -1,11 +1,9 @@
-/* Réinitialisation de base */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Style général */
 body {
     font-family: Arial, sans-serif;
     background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
@@ -17,39 +15,35 @@ body {
     align-items: center;
 }
 
-/* Effet animé sur le titre lors du survol */
 h1:hover {
     color: #4CAF50;
     transition: color 0.3s ease-in-out;
 }
 
-/* Style du glass morphisme */
 .glass {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 80%; /* Augmentation de la largeur */
-    max-width: 800px; /* Largeur maximale pour les grands écrans */
+    width: 80%;
+    max-width: 800px;
     margin-bottom: 20px;
 }
 
 /* Style des titres */
-h1, h2 {
+h1, h2, h3 {
     color: #333;
     text-align: center;
     margin-bottom: 20px;
 }
 
-/* Effet de titre sur le label du formulaire */
 label {
     font-size: 1.2em;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
-/* Style du formulaire et des résultats */
 form, #results {
     display: flex;
     flex-direction: column;
@@ -66,7 +60,6 @@ input, select {
     border-radius: 5px;
 }
 
-/* Mise en évidence de la div avec l'ID 'score' */
 #score {
     padding: 15px;
     border-radius: 10px;
@@ -75,7 +68,6 @@ input, select {
     margin-bottom: 20px;
 }
 
-/* Effet visuel sur la liste des améliorations */
 #hints {
     padding: 15px;
     border-radius: 10px;
@@ -102,7 +94,6 @@ input, select {
     list-style-type: none;
 }
 
-/* Accent sur les économies potentielles */
 #save {
     font-size: 1.5em;
     color: #4CAF50;
